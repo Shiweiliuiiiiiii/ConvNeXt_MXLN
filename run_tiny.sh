@@ -10,7 +10,7 @@ torchrun --nproc_per_node=2 --master_port=29501 main.py \
 --batch_size 256 --lr 4e-3 --update_freq 4 \
 --model_ema true --model_ema_eval true \
 --data_path /scratch/shiwei/data/imagenet1k/ \
---epochs 120 \
+--epochs 300 \
 --log_dir ./tensorboard_log/mixln_vit_t \
---output_dir /scratch/shiwei/shiwei/mixln_vit_tiny \
+--output_dir /scratch/shiwei/shiwei/preln_vit_tiny_120 \
 --mode tiny
