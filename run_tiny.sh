@@ -5,9 +5,9 @@
 # --data_path /ImageNet1K \
 # --epochs 120 \
 # --output_dir ./save_results
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --master_port=29500 --nproc_per_node=2 main.py \
+python -m torch.distributed.launch --master_port=29500 --nproc_per_node=2 main.py \
 --model vit --drop_path 0.1 \
---batch_size 512 --lr 4e-3 --update_freq 4 \
+--batch_size 256 --lr 4e-3 --update_freq 4 \
 --model_ema true --model_ema_eval true \
 --data_path /scratch/shiwei/data/imagenet1k \
 --epochs 120 \
