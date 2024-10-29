@@ -45,7 +45,7 @@ class CustomVisionTransformer(TimmVisionTransformer):
                 norm_layer=norm_layer,
                 act_layer=act_layer,
                 # pre_norm=True,
-                pre_norm=False if i < depth // 6 else True
+                pre_norm=False if i < depth // 3 else True
             )
             for i in range(depth)
         ])
