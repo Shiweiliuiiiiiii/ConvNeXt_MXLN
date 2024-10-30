@@ -5,7 +5,7 @@
 # --data_path /ImageNet1K \
 # --epochs 120 \
 # --output_dir ./save_results
-torchrun --nproc_per_node=2 --master_port=29501 main.py \
+torchrun --nproc_per_node=2 --master_port=29500 main.py \
 --model vit --drop_path 0.1 \
 --batch_size 1024 --lr 4e-3 --update_freq 2 \
 --model_ema true --model_ema_eval true \
