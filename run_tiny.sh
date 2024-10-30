@@ -12,5 +12,5 @@ torchrun --nproc_per_node=2 --master_port=29501 main.py \
 --data_path /scratch/shiwei/data/imagenet1k/ \
 --epochs 120 \
 --log_dir ./tensorboard_log/mixln_vit_t \
---output_dir /scratch/shiwei/shiwei/mixln_vit_tiny_6_12_posts \
+--output_dir /scratch/shiwei/shiwei/mixln_vit_tiny_pre \
 --mode tiny
